@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --clr-primary: ;
+  --clr-secondary-1: #777777;
+  --clr-secondary-2: #ffba00;
+
+
+  --clr-btn-primary: linear-gradient(90deg, rgb(255, 186, 0) 0%, rgb(255, 108, 0) 100%);
+  --clr-btn-secondary: #e8f0f2;
+
+  --clr-heading-primary: #222222;
+  --clr-heading-secondary: #fff;
+
+  --ff-primary: 'Popinss', sans-serif;
+  --ff-secondary: 'Roboto', sans-serif;
+
+  --ff-btn: var(--ff-secondary);
+  --ff-heading: var(--ff-primary);
+  --ff-body: var(--ff-primary);
+
+
+  --fs-300: 1.4rem;
+  --fs-400: 1.6rem;
+  --fs-500: 1.8rem;
+  --fs-600: 2.4rem;
+  --fs-700: 3.6rem;
+  --fs-800: 6rem;
+
+  --fs-body: var(--fs-300);
+  --fs-nav: var(--fs-400);
+  --fs-title-heading: var(--fs-700);
+  --fs-desc-heading: var(--fs-400);
+  --fs-promo-heading: var(--fs-600);
+  --fs-btn: var(--fs-300);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+*,
+::after,
+::before{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0; 
+  font: inherit
+}
+
+html{
+  font-size: 62.5%;
+}
+
+html:focus-within{
+  scroll-behavior: smooth;
+}
+
+html,
+body{
+  height: 100%;
+}
+
+body{
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+ul,
+ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+img,
+picture,
+svg{
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
 }
